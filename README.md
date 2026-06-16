@@ -1,4 +1,4 @@
-# 🎈 The Leaky Balloon Volume Control
+# The Leaky Balloon Volume Control
 
 ## Concept
 Most volume sliders let you set a volume and forget it. That makes users lazy and entitled. The Leaky Balloon Volume Control operates on an entirely different philosophy: **Volume is a privilege, not a right. It must be actively maintained through physical labor.**
