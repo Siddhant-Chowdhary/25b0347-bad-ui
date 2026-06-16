@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaky Balloon Volume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Volume Control</h1>
+        <p class="subtitle">Volume is a privilege, not a right. Keep pumping to maintain your audio level. Don't go over 100% or it will POP!</p>
+        
+        <div class="balloon-container">
+            <div id="balloon">
+                <span id="volume-text">0%</span>
+            </div>
+            <div class="string"></div>
+        </div>
+
+        <button id="pump-btn">💨 PUMP</button>
+
+        <div class="status">
+            System Audio Level: <strong id="status-text">0%</strong>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

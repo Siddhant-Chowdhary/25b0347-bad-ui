@@ -1,0 +1,101 @@
+body {
+    /* Intentionally bad, universally despised font choice */
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif; 
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 400px;
+}
+
+h1 {
+    color: #ff4500;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.balloon-container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#balloon {
+    background-color: #ff4d4d;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    transition: width 0.1s ease-out, height 0.1s ease-out, background-color 0.3s;
+    box-shadow: inset -5px -5px 15px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.string {
+    width: 2px;
+    height: 50px;
+    background-color: #333;
+    z-index: 1;
+}
+
+#pump-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #2E8B57;
+    transition: transform 0.1s, box-shadow 0.1s;
+    user-select: none;
+}
+
+#pump-btn:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 #2E8B57;
+}
+
+.status {
+    margin-top: 25px;
+    font-size: 18px;
+    background: #eeeeee;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Popped state for when the user exceeds 100% */
+.popped {
+    background-color: transparent !important;
+    border: 3px dashed #ff4d4d;
+    box-shadow: none !important;
+    color: #ff4d4d !important;
+    width: 60px !important;
+    height: 60px !important;
+}
